@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "ESKA",
+    "slug": "ESKA",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Bolehkan ESKA Untuk Akses Lokasi anda"
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./assets/judullogin.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "Membership.Sonokembang.Malang",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Aplikasi ini membutuhkan akses lokasi untuk menyediakan layanan berbasis lokasi.",
+        "NSLocationAlwaysUsageDescription": "Aplikasi ini membutuhkan akses lokasi untuk menyediakan layanan berbasis lokasi meskipun aplikasi berjalan di latar belakang.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Aplikasi ini membutuhkan akses lokasi penuh untuk memberikan pengalaman terbaik."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/judullogin.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "Membership.Sonokembang.Malang",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCINbUStsYC0RAsY-QPz14JPfoki_gcUX0"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "26cca85a-20a6-46ed-895f-be5229c3411e"
+      }
+    }
+  }
+}
